@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+Weather App ☀️🌧️
+Aplicación web desarrollada en React que permite consultar el clima en tiempo real de cualquier ciudad del mundo, consumiendo la API REST de WeatherAPI.
+🚀 Características
+🔎 Búsqueda de clima por nombre de ciudad.
+🌡️ Información en tiempo real: temperatura, condición climática, viento y humedad.
+🌗 Diseño adaptativo según condiciones día/noche.
+📱 Interfaz responsiva construida con Bootstrap.
+⚙️ Manejo seguro de credenciales mediante variables de entorno (`.env`).
+🛠️ Tecnologías utilizadas
+React 18 — Librería principal para la UI.
+JavaScript (ES6+)
+Custom Hooks — `useForm` para manejo de formularios.
+PropTypes — Validación de props en componentes.
+Fetch API — Para consumir la API REST.
+Bootstrap 5 — Para estilos y diseño responsivo.
+📦 Instalación y uso
+Requisitos previos
+Node.js 18 o superior
+npm o yarn
+Una API key gratuita de weatherapi.com
+Pasos
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/Sxito8/weather-app-react.git
+cd weather-app-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 2. Instalar dependencias
+npm install
 
-## Available Scripts
+# 3. Crear el archivo .env en la raíz del proyecto con tu API key
+# (copia el formato de .env.template)
+echo "VITE_WEATHER_API_KEY=tu_api_key_aqui" > .env
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 4. Ejecutar el servidor de desarrollo
+npm start
+```
+La aplicación quedará disponible en `http://localhost:3000`.
+📂 Estructura del proyecto
+```
+weather-app-react/
+├── public/
+├── src/
+│   ├── api/
+│   │   └── weatherapi.js       # Conexión con la API
+│   ├── assets/
+│   │   └── css/                # Estilos
+│   ├── components/
+│   │   ├── Search.jsx          # Barra de búsqueda
+│   │   └── WeatherCard.jsx     # Tarjeta de información del clima
+│   ├── Hooks/
+│   │   └── useForm.js          # Hook personalizado
+│   ├── App.jsx                 # Componente raíz
+│   └── main.jsx                # Punto de entrada
+├── index.html
+├── package.json
+└── vite.config.js
+```
+🧠 Lo que aprendí
+Construcción de custom hooks en React para reutilización de lógica.
+Manejo seguro de variables de entorno con `.env` para proteger credenciales.
+Consumo asíncrono de APIs REST con `async/await` y `useEffect`.
+Validación de props con PropTypes para mayor robustez del código.
+Renderizado condicional según el estado de la aplicación.
+Diseño responsivo con Bootstrap.
+👤 Autor
+Sixto Exiga Martínez
+Ingeniero en Sistemas Computacionales — Instituto Tecnológico de Tuxtepec
+GitHub
+---
+Proyecto desarrollado durante el curso de Frontend Development 2024.
