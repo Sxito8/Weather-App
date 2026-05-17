@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/27929473/README.1.md)
+
 # Weather App ☀️🌧️
 
 Aplicación web desarrollada en React que permite consultar el clima en tiempo real de cualquier ciudad del mundo, consumiendo la API REST de [WeatherAPI](https://www.weatherapi.com/).
